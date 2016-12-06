@@ -4,7 +4,14 @@
         <link href="/ui/style.css" rel="stylesheet" />
         <title>Yogi's App</title>
     </head>
-    <body>
+    <body> <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=170015126805829";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
                 
                 <div class="center">
                     <img src="/ui/madi.png" class="img-medium"/>
@@ -37,6 +44,7 @@
                
     
         </div>
+        <div class="fb-comments" data-href="http://yogeshdeveloper.imad.hasura-app.io/" data-width="550" data-numposts="5"></div>
         <script type="text/javascript" src="/ui/main.js">
         </script>
         <div class="fb-comments" data-href="http://yogeshdeveloper.imad.hasura-app.io/" data-width="550" data-numposts="5"></div>
