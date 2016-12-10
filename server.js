@@ -14,10 +14,16 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('img/demo-screen-1.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'img', 'img/demo-screen-1.jpg'));
+  res.sendFile(path.join(__dirname, 'img', 'demo-screen-1.jpg'));
 });
 
+app.get('img/bg-cta.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'img', 'bg-cta.jpg'));
+  });
 
+app.get('img/bg-pattern.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'img', 'bg-pattern.png'));
+  });
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
