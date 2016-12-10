@@ -6,6 +6,11 @@ var crypto = require('crypto');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
+wp_enqueue_style('gavern-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css', array('gavern-normalize'), '4.1.0' );
+
+
+  
+
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
