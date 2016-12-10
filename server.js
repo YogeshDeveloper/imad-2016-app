@@ -81,6 +81,10 @@ app.get('/vendor/simple-line-icons/css/simple-line-icons.css', function (req, re
   res.sendFile(path.join(__dirname, 'vendor/simple-line-icons/css', 'simple-line-icons.css'));
   });
   
+app.get('/less/mixins.less', function (req, res) {
+  res.sendFile(path.join(__dirname, 'less/mixins.less', 'mixins.less'));
+  });
+  
 app.get('/ui/yogi.gif', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'yogi.gif'));
   });
