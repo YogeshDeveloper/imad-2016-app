@@ -77,6 +77,10 @@ app.get('/vendor/simple-line-icons/css/simple-line-icons.css', function (req, re
   res.sendFile(path.join(__dirname, 'vendor/simple-line-icons/css', 'simple-line-icons.css'));
   });
   
+app.get('/ui/yogi.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'yogi.gif'));
+  });
+  
   
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
