@@ -82,7 +82,7 @@ app.get('/vendor/simple-line-icons/css/simple-line-icons.css', function (req, re
   });
   
 app.get('/less/mixins.less', function (req, res) {
-  res.sendFile(path.join(__dirname, 'less/mixins.less', 'mixins.less'));
+  res.sendFile(path.join(__dirname, 'less', 'mixins.less'));
   });
   
 app.get('/ui/yogi.gif', function (req, res) {
@@ -92,6 +92,44 @@ app.get('/ui/yogi.gif', function (req, res) {
 app.get('/blog.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'blog.html'));
   });
+
+app.get('/less/mixins.less', function (req, res) {
+  res.sendFile(path.join(__dirname, 'less', 'mixins.less'));
+  });
+  
+
+app.get('/less/variables.less', function (req, res) {
+  res.sendFile(path.join(__dirname, 'less', 'variables.less'));
+  });
+  
+app.get('vendor/simple-line-icons/fonts/Simple-Line-Icons.eot', function (req, res) {
+  res.sendFile(path.join(__dirname, 'vendor/simple-line-icons/fonts', 'Simple-Line-Icons.eot'));
+  });
+  
+app.get('vendor/simple-line-icons/fonts/Simple-Line-Icons.svg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'vendor/simple-line-icons/fonts', 'Simple-Line-Icons.svg'));
+  });
+  
+app.get('vendor/simple-line-icons/fonts/Simple-Line-Icons.ttf', function (req, res) {
+ res.sendFile(path.join(__dirname, 'vendor/simple-line-icons/fonts', 'Simple-Line-Icons.ttf'));
+ });
+  
+app.get('vendor/simple-line-icons/fonts/Simple-Line-Icons.woff', function (req, res) {
+ res.sendFile(path.join(__dirname, 'vendor/simple-line-icons/fonts', 'Simple-Line-Icons.woff'));
+ });
+  
+app.get('vendor/simple-line-icons/fonts/Simple-Line-Icons.woff2', function (req, res) {
+  res.sendFile(path.join(__dirname, 'vendor/simple-line-icons/fonts', 'Simple-Line-Icons.woff2'));
+  });
+  
+app.get('vendor/simple-line-icons/less/simple-line-icons.less', function (req, res) {
+  res.sendFile(path.join(__dirname, 'vendor/simple-line-icons/less', 'simple-line-icons.less'));
+  });
+  
+app.get('vendor/simple-line-icons/scss/simple-line-icons.scss', function (req, res) {
+  res.sendFile(path.join(__dirname, 'vendor/simple-line-icons/scss', 'simple-line-icons.scss'));
+  });
+
   
   
 
