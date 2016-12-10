@@ -6,10 +6,10 @@ var crypto = require('crypto');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
-wp_enqueue_style('gavern-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css', array('gavern-normalize'), '4.1.0' );
+//wp_enqueue_style('gavern-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css', array('gavern-normalize'), '4.1.0' );
 
-import "font-awesome-sprockets";
-import "font-awesome";
+//import "font-awesome-sprockets";
+//import "font-awesome";
   
 
 var express = require('express');
