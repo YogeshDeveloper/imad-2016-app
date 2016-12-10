@@ -33,6 +33,10 @@ app.get('/img/bg-pattern.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'img', 'bg-pattern.png'));
   });
   
+app.get('/img/demo-screen-1.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'img', 'demo-screen-1.jpg'));
+  });
+  
 app.get('/css/new-age.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'css', 'new-age.css'));
   });
