@@ -89,7 +89,7 @@ app.get('/ui/yogi.gif', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'yogi.gif'));
   });
   
-app.get('ui/blog.html', function (req, res) {
+app.get('/ui/blog.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'blog.html'));
   });
   
