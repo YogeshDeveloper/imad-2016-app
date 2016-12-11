@@ -169,7 +169,7 @@ app.get('/Blog.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Blog.html'));
 });
 
-app.get('/bari.html', function (req, res) {
+app.get('/ui/bari.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bari.html'));
 });
 
