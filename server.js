@@ -100,7 +100,7 @@ app.get('/ui/lataka.html', function (req, res) {
   });
   
 app.get('/ui/bari.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'bari.html*'));
+  res.sendFile(path.join(__dirname, 'ui', 'bari.html'));
   });
   
 app.get('/ui/animate_blog.css', function (req, res) {
