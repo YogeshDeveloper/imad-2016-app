@@ -165,7 +165,7 @@ app.get('/js/blog/jquery-1.11.2.min.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'js','blog', 'jquery-1.11.2.min.js'));
 });
 
-app.get('ui/Blog.html', function (req, res) {
+app.get('/ui/Blog.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Blog.html'));
 });
 
@@ -177,19 +177,19 @@ app.get('/lataka.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'lataka.html'));
 });
 
-app.get('ui/interstellar.html', function (req, res) {
+app.get('/ui/interstellar.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'interstellar.html'));
 });
 
-app.get('ui/do_not_quit.html', function (req, res) {
+app.get('/ui/do_not_quit.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'do_not_quit.html'));
 });
 
-app.get('ui/animate_blog.css', function (req, res) {
+app.get('/ui/animate_blog.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'animate_blog.css'));
 });
 
-app.get('ui/blog_style.css', function (req, res) {
+app.get('/ui/blog_style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'blog_style.css'));
 });
 
