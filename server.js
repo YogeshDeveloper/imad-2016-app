@@ -87,42 +87,6 @@ app.get('/vendor/simple-line-icons/css/simple-line-icons.css', function (req, re
   res.sendFile(path.join(__dirname, 'vendor/simple-line-icons/css', 'simple-line-icons.css'));
   });
   
-app.get('/ui/Interstellar.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Interstellar.html'));
-  });
-  
-app.get('/ui/do_not_quit.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'ui/do_not_quit.html'));
-  });
-  
-app.get('/ui/lataka.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'lataka.html'));
-  });
-  
-app.get('/ui/bari.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'bari.html'));
-  });
-  
-app.get('/ui/animate_blog.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'animate_blog.css'));
-  });
-  
-app.get('/ui/blog_style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'blog_style.css'));
-  });
-  
-app.get('/ui/yogi.gif', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'yogi.gif'));
-  });
-  
-app.get('/ui/Blog.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Blog.html'));
-  });
-  
-app.get('/img/favicon.gif', function (req, res) {
-  res.sendFile(path.join(__dirname, 'img', 'favicon.gif'));
-});
-
 app.get('/img/bg.jpeg', function (req, res) {
   res.sendFile(path.join(__dirname, 'img', 'bg.jpeg'));
 });
