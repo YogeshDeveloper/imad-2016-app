@@ -137,11 +137,11 @@ app.get('/js/script.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'js', 'script.js'));
 });
 
-app.get('/main_blog.js', function (req, res) {
+app.get('/ui/main_blog.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main_blog.js'));
 });
 
-app.get('/main.js', function (req, res) {
+app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
