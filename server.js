@@ -177,8 +177,8 @@ app.get('/lataka.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'lataka.html'));
 });
 
-app.get('/ui/interstellar.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'interstellar.html'));
+app.get('/ui/Interstellar.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Interstellar.html'));
 });
 
 app.get('/ui/do_not_quit.html', function (req, res) {
