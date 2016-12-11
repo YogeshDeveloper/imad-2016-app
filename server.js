@@ -87,17 +87,120 @@ app.get('/vendor/simple-line-icons/css/simple-line-icons.css', function (req, re
   res.sendFile(path.join(__dirname, 'vendor/simple-line-icons/css', 'simple-line-icons.css'));
   });
   
+app.get('/ui/Interstellar.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Interstellar.html'));
+  });
   
+app.get('/ui/do_not_quit.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'ui/do_not_quit.html'));
+  });
   
-
+app.get('/ui/lataka.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'lataka.html'));
+  });
+  
+app.get('/ui/bari.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bari.html*'));
+  });
+  
+app.get('/ui/animate_blog.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'animate_blog.css'));
+  });
+  
+app.get('/ui/blog_style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'blog_style.css'));
+  });
   
 app.get('/ui/yogi.gif', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'yogi.gif'));
   });
   
-app.get('/blog.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'blog.html'));
+app.get('/ui/Blog.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Blog.html'));
   });
+  
+app.get('/img/favicon.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'img', 'favicon.gif'));
+});
+
+app.get('/img/bg.jpeg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'img', 'bg.jpeg'));
+});
+
+
+app.get('/img/lataka.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'img', 'lataka.jpg'));
+});
+
+
+app.get('/img/do_not_quit.jpeg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'img', 'do_not_quit.jpeg'));
+});
+
+app.get('/img/bari.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'img', 'bari.jpg'));
+});
+
+app.get('/img/Interstellar.JPG', function (req, res) {
+  res.sendFile(path.join(__dirname, 'img', 'Interstellar.JPG'));
+});
+
+app.get('/img/avatar.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'img','blog', 'avatar.jpg'));
+});
+
+app.get('/img/music.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'img','blog', 'music.jpg'));
+});
+
+app.get('/img/life.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'img','blog', 'life.jpg'));
+});
+
+app.get('/img/travel.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'img','blog', 'travel.jpg'));
+});
+
+app.get('/js/jquery.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'js', 'jquery.js'));
+});
+
+app.get('/js/typed.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'js', 'typed.js'));
+});
+
+app.get('/js/script.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'js', 'script.js'));
+});
+
+app.get('/main_blog.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main_blog.js'));
+});
+
+app.get('/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+
+app.get('/js/blog/pace.min.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'js','blog', 'pace.min.js'));
+});
+
+app.get('/js/blog/parallax.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'js','blog', 'parallax.js'));
+});
+
+app.get('/js/blog/smoothScroll.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'js','blog', 'smoothScroll.js'));
+});
+
+app.get('/js/blog/wow.min.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'js','blog', 'wow.min.js'));
+});
+
+app.get('/js/blog/jquery-1.11.2.min.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'js','blog', 'jquery-1.11.2.min.js'));
+});
+
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
