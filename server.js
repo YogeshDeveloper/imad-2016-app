@@ -165,6 +165,34 @@ app.get('/js/blog/jquery-1.11.2.min.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'js','blog', 'jquery-1.11.2.min.js'));
 });
 
+app.get('/Blog.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'Blog.html'));
+});
+
+app.get('/bari.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bari.html'));
+});
+
+app.get('/lataka.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'lataka.html'));
+});
+
+app.get('/interstellar.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'interstellar.html'));
+});
+
+app.get('/do_not_quit.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'do_not_quit.html'));
+});
+
+app.get('/animate_blog.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'animate_blog.css'));
+});
+
+app.get('/blog_style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'blog_style.css'));
+});
+
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
