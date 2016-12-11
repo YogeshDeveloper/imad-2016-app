@@ -169,20 +169,20 @@ app.get('/ui/Blog.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Blog.html'));
 });
 
-app.get('/ui/one, function (req, res) {
+app.get('/ui/one.html, function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'one.html');
 });
 
-app.get('/lataka.html', function (req, res) {
+app.get('/ui/two.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'lataka.html'));
 });
 
-app.get('/ui/Interstellar.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Interstellar.html'));
+app.get('/ui/three.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'three.html'));
 });
 
-app.get('/ui/do_not_quit.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'do_not_quit.html'));
+app.get('/ui/four.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'four.html'));
 });
 
 app.get('/ui/animate_blog.css', function (req, res) {
