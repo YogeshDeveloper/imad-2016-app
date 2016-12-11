@@ -169,8 +169,8 @@ app.get('/ui/Blog.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Blog.html'));
 });
 
-app.get('/ui/bari.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'bari.html'));
+app.get('/ui/one, function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'one.html');
 });
 
 app.get('/lataka.html', function (req, res) {
