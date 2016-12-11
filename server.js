@@ -174,7 +174,7 @@ app.get('/ui/one.html, function (req, res) {
 });
 
 app.get('/ui/two.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'lataka.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'two.html'));
 });
 
 app.get('/ui/three.html', function (req, res) {
