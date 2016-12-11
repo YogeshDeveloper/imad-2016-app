@@ -32,16 +32,16 @@
 }
 
 .main_color_bg{
-  background-color: #fd563f !important;
+  background-color: #fd563f 
 }
 .main_color_font{
-  color: #fd563f !important;
+  color: #fd563f 
 }
 
 
 .name1{
-  font-family: 'Kaushan Script', cursive ;
-  font-family: 'Special Elite', cursive !important;
+  font-family: 'Kaushan Script',  ;
+  font-family: 'Special Elite', ;
   color: white;
 
   }
@@ -52,7 +52,7 @@ html,body {
 }
 
 body {
-    font-family: 'Quicksand', sans-serif !important;
+    font-family: 'Quicksand', ;
 }
 
 .text-vertical-center {
@@ -83,7 +83,7 @@ body {
 .btn-send:hover,
 .btn-send:focus,
 .btn-send:active {
-    color: #fff !important;
+    color: #fff ;
     background-color:#fd563f;
 
 }
@@ -91,8 +91,8 @@ body {
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
-    color: #fd563f !important;
-    background-color: rgba(0,0,0,0.15 );
+    color: #fd563f ;
+   background-color: rgba(0, 0, 255, 0.3);
 }
 
 .btn-light {
@@ -110,7 +110,7 @@ body {
 
 /* Custom Horizontal Rule */
 
-hr.small {
+.small {
     max-width: 100px;
 }
 
@@ -146,7 +146,7 @@ footer {
     padding: 50px 0 10px 0;
 }
 .boxi{
-  display: inline !important;
+  display: inline;
 }
 
 #to-top {
