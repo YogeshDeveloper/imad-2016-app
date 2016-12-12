@@ -105,8 +105,8 @@ app.get('/img/bari.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'img', 'bari.jpg'));
 });
 
-app.get('/img/Interstellar.JPG', function (req, res) {
-  res.sendFile(path.join(__dirname, 'img', 'Interstellar.JPG'));
+app.get('/img/Interstellar.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'img', 'Interstellar.jpg'));
 });
 
 app.get('/img/avatar.jpg', function (req, res) {
