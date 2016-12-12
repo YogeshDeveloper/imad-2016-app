@@ -182,13 +182,13 @@ app.get('/ui/two.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'two.html'));
 });
 
-app.get('/ui/three.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'three.html'));
-});
+//app.get('/ui/three.html', function (req, res) {
+//  res.sendFile(path.join(__dirname, 'ui', 'three.html'));
+//});
 
-app.get('/ui/four.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'four.html'));
-});
+//app.get('/ui/four.html', function (req, res) {
+//  res.sendFile(path.join(__dirname, 'ui', 'four.html'));
+//});
 
 app.get('/ui/animate_blog.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'animate_blog.css'));
