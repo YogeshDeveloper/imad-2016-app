@@ -117,10 +117,22 @@ function createTemplate (data) {
 }
 
 
-app.get('/:articleName',function(req,res){
-    var articleName = req.params.articleName;
-    res.send(createTemplate(articles[articleName]));
+app.get('/articles/:articleName', function (req, res) {
+  // SELECT * FROM article WHERE title = '\'; DELETE WHERE a = \'asdf'
+  pool.query("SELECT * FROM article WHERE title = ", [req.params.articleName], function (err, result) {
+    if (err) {
+        res.status(500).send(err.toString());
+    } else {
+        if (result.rows.length === 0) {
+            res.status(404).send('Article not found');
+        } else {
+            var articleData = result.rows[0];
+            res.send(createTemplate(articleData));
+        }
+    }
+  });
 });
+
 
 
 
