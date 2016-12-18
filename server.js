@@ -17,9 +17,14 @@ var config = {
     password: process.env.DB_PASSWORD
 };
 
+
+var app = express();
+app.use(morgan('combined'));
+
+
 var pool = new Pool(config);
 
-app.get('/test', function (req, res) {
+app.get('/test-db', function (req, res) {
    // make a select request
    // return a response with the results
   pool .query('SELECT * FROM test', function (err, result) {
@@ -39,8 +44,6 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
-var app = express();
-app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
