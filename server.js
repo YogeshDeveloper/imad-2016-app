@@ -420,6 +420,10 @@ app.get('/ui/blog_style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'blog_style.css'));
 });
 
+app.get('/ui/yogi.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'yogi.gif'));
+});
+
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
