@@ -18,7 +18,18 @@ var config = {
 };
 
 
-
+var pool= new pool(config);
+app.get('/test1-db', function (req, res) {
+   // make a select request
+   // return a response with the results
+   pool.query('SELECT * FROM test1', function (err, result) {
+      if (err) {
+          res.status(500).send(err.toString());
+      } else {
+          res.send(JSON.stringify(result));
+      }
+   });
+});
 var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
