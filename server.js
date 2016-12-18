@@ -21,10 +21,10 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
-app.use(session({
-    secret: 'someRandomSecretValue',
-    cookie: { maxAge: 1000 * 60 * 60 * 24 * 30}
-}));
+//app.use(session({
+   // secret: 'someRandomSecretValue',
+  //  cookie: { maxAge: 1000 * 60 * 60 * 24 * 30}
+//}));
 
 function hash (input, salt) {
     // How do we create a hash?
