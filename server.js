@@ -9,8 +9,8 @@ var session = require('express-session');
 //console.log(process.env.DB_PASSWORD);
 
 var config = {
-    user: 'coco98',
-    database: 'coco98',
+    user: 'yogeshdeveloper',
+    database: 'yogeshdeveloper',
     host: 'db.imad.hasura-app.io',
     port: '5432',
     password: process.env.DB_PASSWORD
@@ -37,7 +37,7 @@ function createTemplate (data) {
               ${title}
           </title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link href="/ui/style.css" rel="stylesheet" />
+          <link href="/ui/animate_blog.css" rel="stylesheet" />
       </head> 
       <body>
           <div class="container">
