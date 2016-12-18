@@ -29,50 +29,50 @@ app.use(session({
     cookie: { maxAge: 1000 * 60 * 60 * 24 * 30}
 }));
 
-function createTemplate (data) {
-    var title = data.title;
-    var date = data.date;
-    var heading = data.heading;
-    var content = data.content;
+//function createTemplate (data) {
+  //  var title = data.title;
+    //var date = data.date;
+//    var heading = data.heading;
+  //  var content = data.content;
     
-    var htmlTemplate = `
-    <html>
-      <head>
-          <title>
-              ${title}
-          </title>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link href="/ui/animate_blog.css" rel="stylesheet" />
-      </head> 
-      <body>
-          <div class="container">
-              <div>
-                  <a href="/">Home</a>
-              </div>
-              <hr/>
-              <h3>
-                  ${heading}
-              </h3>
-              <div>
-                  ${date.toDateString()}
-              </div>
-              <div>
-                ${content}
-              </div>
-              <hr/>
-              <h4>Comments</h4>
-              <div id="comment_form">
-              </div>
-              <div id="comments">
-                <center>Loading comments...</center>
-              </div>
-          </div>
-          <script type="text/javascript" src="/ui/article.js"></script>
-      </body>
-    </html>
-    `;
-    return htmlTemplate;
-}
+    //var htmlTemplate = `
+    //<html>
+     // <head>
+       //   <title>
+        //      ${title}
+         // </title>
+          //<meta name="viewport" content="width=device-width, initial-scale=1" />
+         // <link href="/ui/animate_blog.css" rel="stylesheet" />
+     // </head> 
+     // <body>
+       //   <div class="container">
+         //     <div>
+           //       <a href="/">Home</a>
+             // </div>
+              //<hr/>
+             // <h3>
+              //    ${heading}
+              //</h3>
+             // <div>
+             //     ${date.toDateString()}
+             // </div>
+             // <div>
+             //   ${content}
+             // </div>
+             // <hr/>
+             // <h4>Comments</h4>
+            //  <div id="comment_form">
+             // </div>
+              //<div id="comments">
+              //  <center>Loading comments...</center>
+             // </div>
+          //</div>
+         // <script type="text/javascript" src="/ui/article.js"></script>
+      //</body>
+    //</html>
+    //`;
+   // return htmlTemplate;
+//}
 
 app.get('/ui/Blog.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Blog.html'));
