@@ -94,7 +94,7 @@ app.post('/create-user', function (req, res) {
           res.send('User successfully created: ' + username);
       }
    });
-});
+
 
 app.post('/login', function (req, res) {
    var username = req.body.username;
