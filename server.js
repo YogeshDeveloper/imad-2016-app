@@ -42,13 +42,80 @@ var articles={
         title: 'Article One | Yogesh',
         heading: 'Article One',
         date:'dec 8,2016',
-        content:
+        content:`<p>
+                   The poem which I read it on my textbooks back in school days. I love this poem. It gives a lot of power. My love towards literature started only after reading this.....
+                    </p>`
         
-        <p> </p>
+        
+       
     },
-    'article-two':{},
-    'article-three':{}
+    'article-two':{
+        
+        title: 'Article Two | Yogesh',
+        heading: 'Article Two',
+        date:'dec 8,2016',
+        content:`<p>
+                   The poem which I read it on my textbooks back in school days. I love this poem. It gives a lot of power. My love towards literature started only after reading this.....
+                    </p>`
+    },
+    'article-three':{
+        
+        title: 'Article Two | Yogesh',
+        heading: 'Article Two',
+        date:'dec 8,2016',
+        content:`<p>
+                   The poem which I read it on my textbooks back in school days. I love this poem. It gives a lot of power. My love towards literature started only after reading this.....
+                    </p>`
+    }
+    
 };
+
+
+function createTemplate (data) {
+    var title = data.title;
+    var date = data.date;
+    var heading = data.heading;
+    var content = data.content;
+    
+    var htmlTemplate = `
+    <html>
+      <head>
+          <title>
+              ${title}
+          </title>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link href="/ui/style.css" rel="stylesheet" />
+      </head> 
+      <body>
+          <div class="container">
+              <div>
+                  <a href="/">Home</a>
+              </div>
+              <hr/>
+              <h3>
+                  ${heading}
+              </h3>
+              <div>
+                  ${date.toDateString()}
+              </div>
+              <div>
+                ${content}
+              </div>
+              <hr/>
+              <h4>Comments</h4>
+              <div id="comment_form">
+              </div>
+              <div id="comments">
+                <center>Loading comments...</center>
+              </div>
+          </div>
+          <script type="text/javascript" src="/ui/article.js"></script>
+      </body>
+    </html>
+    `;
+    return htmlTemplate;
+}
+
 
 app.get('/:articleName',function(req,res){
     var articleName = req.params.articleName;
