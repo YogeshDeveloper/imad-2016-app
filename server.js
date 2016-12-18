@@ -37,7 +37,23 @@ app.get('/test-db', function (req, res) {
 });
 
 
+var articles={
+    'article-one':{
+        title: 'Article One | Yogesh',
+        heading: 'Article One',
+        date:'dec 8,2016',
+        content:
+        
+        <p> </p>
+    },
+    'article-two':{},
+    'article-three':{}
+};
 
+app.get('/:articleName',function(req,res){
+    var articleName = req.params.articleName;
+    res.send(createTemplate(articles[articleName]));
+});
 
 
 
