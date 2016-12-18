@@ -218,19 +218,3 @@ footer {
   line-height: 60px;
   display: none;
 }
-.comment {
-    margin-left: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-.commenter {
-    font-style: italic;
-    font-size: 0.8em;
-}
-
-#comment_form {
-    margin-left: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ccc;
-}
