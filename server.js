@@ -405,6 +405,11 @@ app.get('/ui/one.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'one.html'));
 });
 
+app.get('/ui/article.js', function (req, res) {
+  res.sendFile(path.join(__dirname,'ui', 'article.js'));
+});
+
+
 //app.get('/ui/two.html', function (req, res) {
 //  res.sendFile(path.join(__dirname, 'ui', 'two.html'));
 //});
