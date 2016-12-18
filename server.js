@@ -6,6 +6,8 @@ var crypto = require('crypto');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
+console.log(process.env.DB_PASSWORD);
+
 var config = {
     user: 'yogeshdeveloper',
     database: 'yogeshdeveloper',
@@ -15,7 +17,7 @@ var config = {
 };
 
 var app = express();
-app.use(morgan('combined'));
+//app.use(morgan('combined'));
 app.use(bodyParser.json());
 app.use(session({
     secret: 'someRandomSecretValue',
