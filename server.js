@@ -17,7 +17,7 @@ var config = {
     password: process.env.DB_PASSWORD
 };
 
-var pool = new Pool(config);
+var pool = new Pool(config)
 
 var app = express();
 app.use(morgan('combined'));
