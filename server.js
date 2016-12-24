@@ -152,7 +152,7 @@ app.post('/submit-comment/:articleName', function (req, res) {
                             if (err) {
                                 res.status(500).send(err.toString());
                             } else {
-                                res.status(200).send('Comment inserted!');
+                                res.status(200).send('Comment inserted!')
                             }
                         });
                 }
@@ -317,7 +317,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/img/demo-screen-1.jpg', function (req, res) {
- res.sendFile(path.join(__dirname, 'img', 'demo-screen-1.jpg'));
+  res.sendFile(path.join(__dirname, 'img', 'demo-screen-1.jpg'));
 });
 
 app.get('/img/bg-cta.jpg', function (req, res) {
