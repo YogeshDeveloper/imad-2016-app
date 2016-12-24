@@ -316,9 +316,9 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/img/demo-screen-1.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'img', 'demo-screen-1.jpg'));
-});
+//app.get('/img/demo-screen-1.jpg', function (req, res) {
+//  res.sendFile(path.join(__dirname, 'img', 'demo-screen-1.jpg'));
+//});
 
 app.get('/img/bg-cta.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'img', 'bg-cta.jpg'));
